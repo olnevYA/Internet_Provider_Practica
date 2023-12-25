@@ -1,0 +1,70 @@
+@charset "utf-8";
+.modal-open {
+    overflow-y: scroll;
+}
+
+.tariffs-table {
+    text-align: center;
+}
+
+thead {
+    border-top: hidden;
+}
+
+table {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.table-container {
+    position: relative;
+    width: 90%;
+    text-align: center;
+    margin: 4% auto;
+}
+
+tbody {
+    background: linear-gradient(to right, rgba(155, 222, 203, 0.72), rgba(216, 194, 52, 0.58), rgba(216, 194, 52, 0.58));
+}
+
+.table-caption {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.modal {
+    top: 25%;
+    font-size: 20px;
+    font-family: 'Cormorant Infant', serif;
+}
+
+.confirm-cancel:hover {
+    background-color: #c5c9cd;
+}
+
+.btn-info:disabled {
+    opacity: 0.9;
+}
+
+.create-tariff {
+    font-size: 30px;
+    z-index: 5;
+    position: absolute;
+    left: 85%;
+    top: 15%;
+    font-weight: bold;
+    color: #6773ff;
+}
+
+.create-tariff:hover {
+    cursor: pointer;
+    color: #17a2b8;
+}
+
+.admin-button:hover {
+    background-color: #cacece;
+}
+
+i {
+    margin-right: 5px;
+}

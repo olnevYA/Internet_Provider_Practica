@@ -1,0 +1,143 @@
+body {
+    overflow-x: auto;
+}
+
+.cartoon-img {
+    height: 100px;
+    width: auto;
+}
+
+.user-info {
+    font-weight: bold;
+    font-size: 52px;
+    height: 100px;
+}
+
+.hello-container {
+    min-width: 400px;
+}
+
+.balance {
+    min-width: 220px;
+}
+
+.tariff-info {
+    min-width: 420px;
+}
+
+.close {
+    right: 5%;
+}
+
+.tariff-balance {
+    height: 300px;
+}
+
+.carousel-container {
+    min-width: 700px;
+}
+
+.carousel-container img {
+    height: 20%;
+    min-height: 100px;
+}
+
+.carousel-container img:hover {
+    cursor: pointer;
+}
+
+.carousel-caption {
+    font-size: 36px;
+    color: black;
+}
+
+.carousel-indicators {
+    position: relative;
+}
+
+.carousel-indicators li {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: #54716d;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-container img {
+        height: 100px;
+    }
+
+    .tariff-balance {
+        height: auto;
+    }
+
+    .user-info {
+        height: auto;
+    }
+
+    .carousel {
+        min-width: 450px;
+    }
+
+    .carousel-container {
+        min-width: auto;
+    }
+
+    .carousel-indicators li {
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+.reward-history-container button {
+    font-size: 40px;
+    color: white;
+    background-color: #54716d;
+    border-radius: 15px 70px 15px;
+}
+
+.reward-history-container button:hover {
+    background-color: #334b47;
+}
+
+.modal {
+    font-size: 20px;
+    font-family: 'Cormorant Infant', serif;
+}
+
+.modal-payment {
+    top: 25%;
+}
+
+.reward-modal img {
+    height: 180px;
+    width: auto;
+}
+
+.close {
+    position: absolute;
+}
+
+.main-info {
+    color: rgba(87, 31, 255, 0.84);
+    display: inline;
+    font-size: 45px;
+    padding-left: 15px;
+    margin-right: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+i {
+    margin-right: 5px;
+}

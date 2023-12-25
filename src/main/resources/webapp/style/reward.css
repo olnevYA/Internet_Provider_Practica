@@ -1,0 +1,50 @@
+body {
+    overflow-y: scroll;
+}
+
+.rewards-container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+}
+
+.table {
+    background: linear-gradient(to right, rgba(155, 222, 203, 0.72), rgba(216, 194, 52, 0.58), rgba(216, 194, 52, 0.58));
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+table th {
+    font-size: 30px;
+}
+
+table td {
+    font-size: 20px;
+}
+
+.reward-img {
+    height: 110px;
+    width: auto;
+}
+
+.check-reward {
+    color: #343a40;
+}
+
+.check-reward:hover {
+    color: #181d22;
+    cursor: pointer;
+}
+
+.modal, .modal button {
+    top: 25%;
+    font-size: 20px;
+    font-family: 'Cormorant Infant', serif;
+}
+
+i {
+    margin-right: 5px;
+}

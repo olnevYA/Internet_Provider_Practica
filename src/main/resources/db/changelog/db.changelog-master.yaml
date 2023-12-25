@@ -1,0 +1,8 @@
+---
+databaseChangeLog:
+  - preConditions:
+    - runningAs:
+        username: root
+
+  - includeAll:
+        path: src/main/resources/db/changelog/included

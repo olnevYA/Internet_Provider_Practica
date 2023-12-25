@@ -1,0 +1,19 @@
+body {
+    overflow-y: hidden;
+}
+
+.carousel-container {
+    top: 0;
+    right: 0;
+    position: relative;
+}
+
+.carousel img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel img:hover {
+    cursor: unset;
+    opacity: 1;
+}

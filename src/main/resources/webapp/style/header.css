@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    height: 100%;
+    background: linear-gradient(to right, rgba(155, 222, 203, 0.72), rgba(216, 194, 52, 0.58), rgba(216, 194, 52, 0.58));
+}
+
+nav {
+    position: sticky;
+    line-height: 60px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    height: 100%;
+}
+
+@media screen and (max-height: 510px) {
+    nav {
+        position: relative;
+    }
+}
+
+nav a {
+    display: block;
+}
+
+nav .active {
+    word-spacing: 100px;
+    text-decoration: none;
+    font-size: 56px;
+    line-height: 65px;
+    color: #17a2b8;
+}
+
+nav .nav-btn:hover {
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+.modal-open {
+    overflow-y: auto
+}
+
+.header-img, .lang-img {
+    height: 50px;
+    width: 50px;
+}
+
+.lang-img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.lang {
+    text-align: center;
+}
+
+.header-bird {
+    height: 150px;
+    width: auto;
+}
+
+.non-hover-img:hover {
+    opacity: 1;
+    cursor: unset;
+}
+
+.content-container {
+    height: 100%;
+    width: 100%;
+}

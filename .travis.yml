@@ -1,0 +1,19 @@
+language: java
+jdk: oraclejdk8
+services:
+  - mysql
+addons:
+  apt:
+    sources:
+      - mysql-5.7-trusty
+    packages:
+      - mysql-server
+      - mysql-client
+before_install:
+  - chmod +x gradlew
+  - sudo mysql -e "use mysql; update user set authentication_string=PASSWORD('1234') where User='root'; update user set plugin='mysql_native_password';FLUSH PRIVILEGES;"
+  - sudo mysql_upgrade -u root -p1234
+  - sudo service mysql restart
+  - mysql -u root -p1234 -h localhost -P 3306 -e 'CREATE DATABASE internet_provider;'
+before_script:
+  - ./gradlew update

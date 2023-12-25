@@ -1,0 +1,35 @@
+<%@ page contentType="text/html;charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<body>
+<noscript>
+    <style>html {
+        display: none;
+    }</style>
+    <meta http-equiv="refresh" content="0; noscript.html"/>
+</noscript>
+<nav ng-app="myApp" ng-controller="loginCtrl"
+     class="nav d-flex align-content-between flex-wrap text-center h-auto d-block"
+     role="navigation" ng-cloak>
+    <div class="w-100">
+        <img src="img/bird.png" class="header-bird header-img non-hover-img" alt="Bird">
+        <a class="nav-item nav-btn <c:if test='${param.pageTitle == "main"}'>active</c:if>" id="main"
+           href="main.jsp" target="_self" translate="MAIN_PAGE"></a>
+        <a class="nav-item nav-btn <c:if test='${param.pageTitle == "tariffs"}'>active</c:if>" id="tariffs"
+           href="tariffs.jsp" target="_self" translate="TARIFFS"></a>
+        <a class="nav-item nav-btn <c:if test='${param.pageTitle == "office"}'>active</c:if>" id="office"
+           href="office.jsp" target="_self" translate="OFFICE_PAGE"></a>
+        <a class="nav-item nav-btn <c:if test='${param.pageTitle == "reward"}'>active</c:if>"
+           id="bonus-program" href="reward.jsp" target="_self" translate="SHOP_PAGE"></a>
+        <a ng-if="role == 'Admin'" class="nav-item nav-btn <c:if test='${param.pageTitle == "users"}'>active</c:if>"
+           id="users" href="users.jsp" target="_self" translate="USERS_PAGE"></a>
+        <a class="nav-item nav-btn" href="#" ng-click="logout()" translate="EXIT_BUTTON"></a>
+    </div>
+    <div class="lang w-100">
+        <img class="lang-img" ng-src="img/Flag_of_United_Kingdom.png" alt="Kingdom of United Flag"
+             ng-click="changeLanguage('en')">
+        <img class="lang-img" ng-src="img/Flag_of_Russia.png" alt="Russian Flag" ng-click="changeLanguage('ru')">
+    </div>
+</nav>
+</body>
+</html>

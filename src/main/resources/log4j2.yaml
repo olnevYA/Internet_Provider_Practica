@@ -1,0 +1,29 @@
+Configutation:
+
+  Appenders:
+
+    Console:
+      name: Console_Appender
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+
+    File:
+      name: File_Appender_Error
+      fileName: log/logfile.log
+      PatternLayout:
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+
+  Loggers:
+
+      Root:
+        level: error
+
+      Logger:
+        - name: com.epam
+          level: debug
+          AppenderRef:
+            - ref: Console_Appender
+              level: info
+            - ref: File_Appender_Error
+              level: error
